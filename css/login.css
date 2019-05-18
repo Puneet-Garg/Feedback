@@ -40,26 +40,26 @@ body, html {
 }
 
 /*---------------------------------------------*/
-a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-}
+/* a { */
+	/* font-family: Poppins-Regular; */
+	/* font-size: 14px; */
+	/* line-height: 1.7; */
+	/* color: #666666; */
+	/* margin: 0px; */
+	/* transition: all 0.4s; */
+	/* -webkit-transition: all 0.4s; */
+  /* -o-transition: all 0.4s; */
+  /* -moz-transition: all 0.4s; */
+/* } */
 
-a:focus {
-	outline: none !important;
-}
+/* a:focus { */
+	/* outline: none !important; */
+/* } */
 
-a:hover {
-	text-decoration: none;
-  color: #57b846;
-}
+/* a:hover { */
+	/* text-decoration: none; */
+  /* color: #57b846; */
+/* } */
 
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
@@ -126,39 +126,39 @@ button:hover {
 	cursor: pointer;
 }
 
-iframe {
-	border: none !important;
-}
+/* iframe { */
+	/* border: none !important; */
+/* } */
 
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
-.txt1 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #999999;
-}
+/* .txt1 { */
+  /* font-family: Poppins-Regular; */
+  /* font-size: 13px; */
+  /* line-height: 1.5; */
+  /* color: #999999; */
+/* } */
 
-.txt2 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #666666;
-}
+/* .txt2 { */
+  /* font-family: Poppins-Regular; */
+  /* font-size: 13px; */
+  /* line-height: 1.5; */
+  /* color: #666666; */
+/* } */
 
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
 
-.limiter {
-  width: 100%;
-  margin: 0 auto;
-}
+/* .limiter { */
+  /* width: 100%; */
+  /* margin: 0 auto; */
+/* } */
 
 .container-login100 {
-  width: 100%;  
-  min-height: 100vh;
+  height: 140px;  
+  min-width: 980px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -176,7 +176,7 @@ iframe {
 }
 
 .wrap-login100 {
-  width: 960px;
+  width: 800px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -188,59 +188,86 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 177px 130px 33px 95px;
+  
+  
 }
 
+.forgottenPwd {
+	padding-left: 80px;
+}
+
+.forgottenPwdtxt a {
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  color: #ffffff;
+  padding-left: 10px;
+  position: relative
+}
 /*------------------------------------------------------------------
 [  ]*/
-.login100-pic {
+.logo-pic {
   width: 150px;
+  height: 100px;
 }
 
-.login100-pic img {
-  max-width: 50%;
+.logo-pic img {
+  max-width: 80%;
+  height: 100px;
 }
 
 
 /*------------------------------------------------------------------
 [  ]*/
 .login100-form {
-  width: 290px;
+  width: 800px;
+  height: 10px;
+  padding-left: 50px;
 }
 
-.login100-form-title {
+.headerTitle {
   font-family: Poppins-Bold;
   font-size: 24px;
-  color: #333333;
+  color: #ffffff;
   line-height: 1.2;
   text-align: center;
-
-  width: 100%;
+  height: 100px
+  width: 500px;
   display: block;
+  padding-top: 30px;
   padding-bottom: 5px;
 }
 
 
 /*---------------------------------------------*/
+
+.emailpwdLabel {
+	
+  position:static;
+  width: 40%;
+  height: 1	px;
+  padding-left: 110px;
+}
 .wrap-input100 {
   position: relative;
-  width: 100%;
+  width: 40%;
   z-index: 1;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-left: 40px;
 }
+
 
 .input100 {
   font-family: Poppins-Medium;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.5;
   color: #666666;
 
-  display: block;
+  display: normal;
   width: 100%;
   background: #e6e6e6;
   height: 50px;
   border-radius: 25px;
-  padding: 0 30px 0 68px;
+  padding-left: 30px;
 }
 
 
@@ -293,7 +320,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-left: 35px;
+  padding-left: 45px;
   pointer-events: none;
   color: #666666;
 
@@ -311,7 +338,7 @@ iframe {
 /*------------------------------------------------------------------
 [ Button ]*/
 .container-login100-form-btn {
-  width: 100%;
+  width: 85%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -319,7 +346,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .login100-form-btn {
