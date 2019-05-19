@@ -25,6 +25,11 @@
   src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
 }
 
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
@@ -175,6 +180,19 @@ button:hover {
   background: linear-gradient(-135deg, #009999, #006b99);
 }
 
+.loginContainer {
+  height: 140px;  
+  width: 780px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .wrap-login100 {
   width: 800px;
   background: #fff;
@@ -187,9 +205,14 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  
-  
+  justify-content: space-between;  
+}
+
+.wrap-signup100 {
+  width: 565px;
+  min-height:100vh;
+  border-radius: 2px;
+  position: relative;
 }
 
 .forgottenPwd {
@@ -215,7 +238,46 @@ button:hover {
   height: 100px;
 }
 
+.signup_pics {
+  height: 480px;  
+  min-width: 980px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: initial;
+  align-items: flex-start;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #eaf7f9, #006b99);
+  background: -o-linear-gradient(-135deg, #eaf7f9, #006b99);
+  background: -moz-linear-gradient(-135deg, #eaf7f9, #006b99);
+  background: linear-gradient(-135deg, #eaf7f9, #006b99);
 
+
+}
+
+.border {
+	height: 100%;
+	width: 100%;
+	
+}
+.pics {
+	width: 750px;
+	height: 480px;
+}
+
+.signup {
+	width: 568px;
+	height: 480px;
+}
+
+.signuptab {
+	width: 568px;
+	height: 320px;
+}
 /*------------------------------------------------------------------
 [  ]*/
 .login100-form {
@@ -237,7 +299,26 @@ button:hover {
   padding-bottom: 5px;
 }
 
+.signup100-form {
+  width: 100%;
+  height: 600 px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.signup100-form-title {
+  display: block;
+  width: 100%;
+  font-family: Poppins-Bold;
+  font-size: 25px;
+  color: #009999 ;
+  text-align: letter-spacing;
+}
 /*---------------------------------------------*/
 
 .emailpwdLabel {
@@ -270,7 +351,39 @@ button:hover {
   padding-left: 30px;
 }
 
+.swrap-input100 {
+  width: 50%;
+  position: relative;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 45px;
+}
 
+.slabel-input100 {
+  font-family: Poppins-SemiBold;
+  font-size: 15px;
+
+ 
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sinput100 {
+  display: block;
+  width: 220px;
+  height: 25px;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  color: #555555;
+  padding: 0 2px;
+  line-height: 1.2;
+}
+
+
+.picsignuptab {
+	height: 450px;
+}
 /*------------------------------------------------------------------
 [ Focus ]*/
 .focus-input100 {
@@ -290,6 +403,46 @@ button:hover {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
+
+/* .sfocus-input100 { */
+  /* position: absolute; */
+  /* display: block; */
+  /* width: 50%; */
+  
+  /* top: 0; */
+  /* left: 0; */
+  /* pointer-events: none; */
+/* } */
+
+/* .sfocus-input100::before { */
+  /* content: ""; */
+  /* display: block; */
+  /* position: absolute; */
+  /* bottom: -2px; */
+  /* left: 0; */
+  /* width: 0; */
+  /* height: 2px; */
+
+  /* -webkit-transition: all 0.4s; */
+  /* -o-transition: all 0.4s; */
+  /* -moz-transition: all 0.4s; */
+  /* transition: all 0.4s; */
+
+  /* background: #d5007d; */
+  /* background: -webkit-linear-gradient(45deg, #d5007d, #e53935); */
+  /* background: -o-linear-gradient(45deg, #d5007d, #e53935); */
+  /* background: -moz-linear-gradient(45deg, #d5007d, #e53935); */
+  /* background: linear-gradient(45deg, #d5007d, #e53935); */
+/* } */
+
+
+/* .sinput100:focus + .sfocus-input100::before { */
+  /* width: 50%; */
+/* } */
+
+/* .has-val.sinput100 + .sfocus-input100::before { */
+  /* width: 50%; */
+/* } */
 
 @-webkit-keyframes anim-shadow {
   to {
@@ -379,6 +532,72 @@ button:hover {
   background: #333333;
 }
 
+.scontainer-signup100-form-btn {
+  width: 157px;
+  height: 36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: relative;
+  align-items: left-side;
+  padding-top: 25px;
+}
+
+.tnc{
+	height: 35px;
+}
+.swrap-signup100-form-btn {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ssignup100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 300%;
+  background: #009999;
+  background: -webkit-linear-gradient(top, #009999 , #7ef1ec, #009999, #7ef1ec);
+  background: -o-linear-gradient(top, #009999 , #7ef1ec, #009999, #7ef1ec);
+  background: -moz-linear-gradient(top, #009999 , #7ef1ec, #009999, #7ef1ec);
+  background: linear-gradient(top, #009999 , #7ef1ec, #009999, #7ef1ec);
+  color: #009999;
+  bottom: -100%;
+  left: 0;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.ssignup100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 35px;
+
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.swrap-signup100-form-btn:hover .ssignup100-form-bgbtn {
+  bottom: 0;
+}
 
 
 /*------------------------------------------------------------------
@@ -419,7 +638,12 @@ button:hover {
     padding: 100px 15px 33px 15px;
   }
 }
-
+@media (max-width: 576px) {
+  .wrap-signup100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -487,3 +711,4 @@ button:hover {
     opacity: 1;
   }
 }
+
