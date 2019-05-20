@@ -38,9 +38,12 @@
 	padding: 0px; 
 	box-sizing: border-box;
 }
-
-body, html {
-	height: 100%;
+html {
+	font-family: Poppins-Regular, sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
 	font-family: Poppins-Regular, sans-serif;
 }
 
@@ -156,14 +159,14 @@ button:hover {
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
 
-/* .limiter { */
-  /* width: 100%; */
-  /* margin: 0 auto; */
-/* } */
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
 
 .container-login100 {
-  height: 140px;  
-  min-width: 980px;
+  min-width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -181,8 +184,9 @@ button:hover {
 }
 
 .loginContainer {
-  height: 140px;  
-  width: 780px;
+  /* height: 140px;   */
+  width: 50%;
+  height: 10vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -209,7 +213,7 @@ button:hover {
 }
 
 .wrap-signup100 {
-  width: 565px;
+  /* width: 100%; */
   min-height:100vh;
   border-radius: 2px;
   position: relative;
@@ -226,11 +230,30 @@ button:hover {
   padding-left: 10px;
   position: relative
 }
+
+.footer {
+  min-width: 100%;
+  height: 17.5vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: initial;
+  align-items: flex-start;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #009999, #006b99);
+  background: -o-linear-gradient(-135deg, #009999, #006b99);
+  background: -moz-linear-gradient(-135deg, #009999, #006b99);
+  background: linear-gradient(-135deg, #009999, #006b99);
+}
 /*------------------------------------------------------------------
 [  ]*/
 .logo-pic {
-  width: 150px;
-  height: 100px;
+  width: 10%;
+
 }
 
 .logo-pic img {
@@ -239,8 +262,8 @@ button:hover {
 }
 
 .signup_pics {
-  height: 480px;  
-  min-width: 980px;
+  height: 70vh;  
+  min-width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -259,10 +282,9 @@ button:hover {
 
 }
 
-.border {
-	height: 100%;
+.picsignb {
 	width: 100%;
-	
+	height: 69vh;
 }
 .pics {
 	width: 750px;
@@ -275,8 +297,8 @@ button:hover {
 }
 
 .signuptab {
-	width: 568px;
-	height: 320px;
+	width: 100%;
+	/* height: 320px; */
 }
 /*------------------------------------------------------------------
 [  ]*/
@@ -292,16 +314,17 @@ button:hover {
   color: #ffffff;
   line-height: 1.2;
   text-align: center;
-  height: 100px
-  width: 500px;
+  /* height: 100px */
+  width: 40%;
   display: block;
   padding-top: 30px;
   padding-bottom: 5px;
+  padding-left: 10px;
 }
 
 .signup100-form {
   width: 100%;
-  height: 600 px;
+  /* height: 600 px; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -318,6 +341,7 @@ button:hover {
   font-size: 25px;
   color: #009999 ;
   text-align: letter-spacing;
+  padding-top: 50px;
 }
 /*---------------------------------------------*/
 
@@ -360,29 +384,30 @@ button:hover {
 
 .slabel-input100 {
   font-family: Poppins-SemiBold;
-  font-size: 15px;
+  font-size: 18px;
 
  
   padding-left: 2px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .sinput100 {
   display: block;
-  width: 220px;
-  height: 25px;
+  width: 80%;
+  /* height: 25px; */
   background: transparent;
   font-family: Poppins-Regular;
   font-size: 14px;
   color: #555555;
   padding: 0 2px;
-  line-height: 1.2;
+  line-height: 2.5;
 }
 
 
 .picsignuptab {
-	height: 450px;
+	/* height: 450px; */
+	width: 100%;
 }
 /*------------------------------------------------------------------
 [ Focus ]*/
@@ -404,15 +429,16 @@ button:hover {
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
 
-/* .sfocus-input100 { */
-  /* position: absolute; */
-  /* display: block; */
-  /* width: 50%; */
+.sfocus-input100 {
+  position: absolute;
+  display: block;
+  width: 80%;
   
-  /* top: 0; */
-  /* left: 0; */
-  /* pointer-events: none; */
-/* } */
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  padding-bottom: 20px;
+}
 
 /* .sfocus-input100::before { */
   /* content: ""; */
@@ -492,7 +518,7 @@ button:hover {
 /*********************************** SLIDER *************************/
 
 .slideshow-container {
-  width: 650px;
+  width: 55%;
   position: relative;
   margin: auto;
 }
@@ -500,6 +526,8 @@ button:hover {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  padding-left: 40px;
+  padding-bottom: 400px;
 }
 
 /* Next & previous buttons */
@@ -627,21 +655,22 @@ button:hover {
 }
 
 .scontainer-signup100-form-btn {
-  width: 157px;
-  height: 36px;
+  width: 20%;
+  /* height: 36px; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: relative;
+  justify-content: static;
   align-items: left-side;
   padding-top: 25px;
 }
 
 .tnc{
-	height: 35px;
+	/* height: 35px; */
+	padding-top: 20px;
 }
 .swrap-signup100-form-btn {
   display: block;
