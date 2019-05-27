@@ -197,6 +197,25 @@ button:hover {
   align-items: flex-start;
 }
 
+.rstpwdContainer {
+  /* height: 140px;   */
+  width: 50%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; 
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-content {
+	background: linear-gradient(-135deg, #eaf7f9, #006b99);
+}
+
+
 .wrap-login100 {
   width: 800px;
   background: #fff;
@@ -320,6 +339,31 @@ button:hover {
   padding-top: 30px;
   padding-bottom: 5px;
   padding-left: 10px;
+}
+
+.pwdRstheaderTitle {
+  /* height: 140px;   */
+  width: 50%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  /* display: flex; */
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: Poppins-Bold;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: center;
+  /* height: 100px */
+  width: 40%;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 5px;
+padding-left: 10px
 }
 
 .signup100-form {

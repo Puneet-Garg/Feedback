@@ -76,15 +76,82 @@
 								<td></td>
 								<td class="forgottenPwd">
 									<div class=forgottenPwdtxt>
-										<a href="#">Forgotten Password?</a>
+									<!-- <a href="#">Forgotten Password></a> -->
+										<div class="container">
+									  <a href="#" data-target="#pwdModal" data-toggle="modal">Forgot Password</a>
+									</div>
+
+									<!--modal-->
+									<div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+									  <div class="modal-dialog">
+									  <div class="modal-content">
+										  <div class="modal-header text-center">
+											  <!-- <button type="button btn-right" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+											  <div align="center">
+												<h4>Forgot Your Password</h4>
+											  </div>
+										  </div>
+										  <div class="modal-body">
+											  <div class="col-md-12">
+													<div class="panel panel-default">
+														<div class="panel-body">
+															<div class="text-center">
+																<div class="panel-body">
+																	<fieldset>
+																		<div class="form-group">
+																			<input class="form-control input-lg" id="zid" placeholder="Enter ZID"_ 
+																				type="text" name="ZID" pattern="[a-zA-Z0-9]{8}"_
+																				autofocus title="Must be Alphanumeric with 8 characters" required>
+																		</div>
+																		<div class="form-group">
+																			<input class="form-control input-lg" id= "em" placeholder="E-mail Address"_
+																			name="email" type="email" pattern=".+@siemens.com" autofocus title="must contain @siemens.com" required>
+																		</div>
+																		
+																	</fieldset>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+										  </div>
+										  <div class="modal-footer">
+											  <div class="col-md-12">
+											  <div class="row">
+											  <div class="col-md-9">
+												  <button class="btn btn-primary" value="email" type="submit" onclick="resetFunc()">Send E-mail</button>
+												  <script type="text/javascript">
+													function resetFunc() {
+													if(em.checkValidity() && zid.checkValidity())
+													{
+													alert("Reset link has been sent to your registered E-mail.");
+													window.location.href = "login.html";
+													}
+													else
+													{
+													
+														return;
+													 } 
+													  
+													  
+													}
+												</script>
+												 <!-- <a href="www.google.com">Forgotten Password</a> -->
+											  </div>
+											  <div class="col-md-3">
+												<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Cancel</button>
+											  </div>
+											</div>											  
+										  </div>
+									  </div>
+									  </div>
+									</div>
 									</div>
 								</td>
 							</tr>
 						</tbody>
-					</table>
-									
-				</form>			
-								
+					</table>			
+				</form>	
 			</div>
 		</div>
 		<!-- </div> -->
